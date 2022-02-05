@@ -53,10 +53,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setPageContent()
         set_page.setOnClickListener { setPageContent() }
-        customSelectionActionModeCallback()
+        setCustomSelectionActionModeCallback()
     }
 
-    private fun customSelectionActionModeCallback() {
+    private fun setCustomSelectionActionModeCallback() {
         tv.customSelectionActionModeCallback = object : ActionMode.Callback {
 
             override fun onCreateActionMode(mode: ActionMode, menu: Menu): Boolean {
